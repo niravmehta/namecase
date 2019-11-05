@@ -2,8 +2,11 @@
 
 A Javascript library for fixing the capitalization of people's names.
 
-It is heavily based on the Perl
-[Lingua-EN-NameCase](http://cpansearch.perl.org/src/SUMMER/Lingua-EN-NameCase-1.15/) module.
+Derived from [emgee3's namecase module](https://github.com/emgee3/namecase). 
+Which in turn is heavily based on the Perl [Lingua-EN-NameCase](http://cpansearch.perl.org/src/SUMMER/Lingua-EN-NameCase-1.15/) module.
+
+Since the original library wasn't updated for a long time, I forked and merged pull requests 
+from other folks.
 
 It's always best to let the user capitalize their own name as there are too many variations
 to programmatically catch them all. However, when working with legacy databases, sometimes
@@ -72,24 +75,3 @@ Install with ```npm install -g namecase```.
 ```bash
 namecase < input.txt > ouput.txt
 ```
-
-### Meteor Integration
-
-NameCase also includes [Meteor](http://meteor.com) integration. The `NameCase` function is available
-on the Client and Server and comes with a Template helper entitled `NameCase`.
-
-```html
-<template name="templateName">
-  {{ NameCase "abe lincoln" optionalNamecaseOptionsHelper }}
-</template>
-```
-
-```javascript
-Template.templateName.helpers({
-  optionalNamecaseOptionsHelper : function () {
-    return { individualFields : true };
-  }
-});
-```
-
-[![Build Status](https://travis-ci.org/emgee3/namecase.png)](https://travis-ci.org/emgee3/namecase)
