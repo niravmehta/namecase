@@ -167,7 +167,9 @@ var combinedFields = [
   /* Unusual names */
   "Khiem Le",               "Macayla Carrns",         "Dr Carmen Balzano",        "Dr. Carmen Balzano",
   "Dr Robert & Ann Leitz",  "Thao & Hy Nguyen",       "Ty Cobb",                  "Eugene L. Nath,Jr.",
-  "Lori & Leslie Cotton/Smith",                       "Ron/Alejandra Brown",      "Derrick/Sandra Jackson"
+  "Lori & Leslie Cotton/Smith", "Ron/Alejandra Brown", "Derrick/Sandra Jackson",
+/* Titles */
+  "Mr Mason Gravitt",       "Dr Mason Gravitt"    
 ];
 
 describe('NameCase on combined fields', function () {
