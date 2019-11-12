@@ -2,11 +2,10 @@
 
 A Javascript library for fixing the capitalization of people's names.
 
-Derived from [emgee3's namecase module](https://github.com/emgee3/namecase). 
-Which in turn is heavily based on the Perl [Lingua-EN-NameCase](http://cpansearch.perl.org/src/SUMMER/Lingua-EN-NameCase-1.15/) module.
-
-Since the original library wasn't updated for a long time, I forked and merged pull requests 
+Derived from [emgee3's namecase module](https://github.com/emgee3/namecase). Since the original library wasn't updated for a long time, I forked and merged pull requests 
 from other folks.
+
+The original library is heavily based on the Perl [Lingua-EN-NameCase](http://cpansearch.perl.org/src/SUMMER/Lingua-EN-NameCase-1.15/) module.
 
 It's always best to let the user capitalize their own name as there are too many variations
 to programmatically catch them all. However, when working with legacy databases, sometimes
